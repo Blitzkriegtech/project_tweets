@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   # GET /about
   get "about", to: "about#index"
+
+  # root path
+  get "/", to: "main#index"
 end
