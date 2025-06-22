@@ -6,8 +6,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/about">About</a>
+        <%= link_to "Home", homepage_path, class: "nav-link active" %>
+        <%= link_to "About", about_path, class: "nav-link" %>
       </div>
     </div>
   </div>
