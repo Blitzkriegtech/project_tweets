@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   get "about", to: "about#index"
 
   # root path
-  get "/", to: "main#index"
+  root to: "main#index"
 end
