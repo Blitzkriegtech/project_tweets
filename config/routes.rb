@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "about-us", to: "about#index", as: :about
-  get "homepage", to: "main#index", as: :homepage
 
   # root path
   root to: "main#index"
