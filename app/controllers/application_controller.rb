@@ -9,4 +9,9 @@ class ApplicationController < ActionController::Base
       Current.user = User.find_by(id: session[:user_id])
     end
   end
+
+  # require user log in method
+  def require_user_logged_in!
+    redirect_to sign_in_path, alert: "You must be signed in to take action." if Current.user.nil?
+  end
 end
