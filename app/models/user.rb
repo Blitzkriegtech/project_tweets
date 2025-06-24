@@ -11,5 +11,5 @@ class User < ApplicationRecord
             format: { with: /\A[^@\s]+@[^@\s]+\z/, message: "must be a valid email address" }
   validates :password,
             presence: true,
-            length: { minimum: 6 }, confirmation: true
+            length: { minimum: 6 }
 end
